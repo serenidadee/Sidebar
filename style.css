@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    background-color: #030712;
+}
+
+aside {
+    height: 100vh;
+    width: 350px;
+    background-color: #111827;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.logo > i {
+    color: #FEF2F2;
+    font-size: 50px;
+}
+
+.logo > p {
+    color: #FEF2F2;
+    font-size: 24px;
+}
+
+.logo > p > span {
+    font-weight: bold;
+    color: #B91C1C;
+}
+
+.search-box {
+    background-color: #374151;
+    border-radius: 10px;
+}
+
+.search {
+    border: none;
+    color: #D1D5DB;
+    width: 300px;
+    height: 40px;
+    padding-left: 15px;
+    outline: none;
+    background: url(./images/search.svg) no-repeat left;
+    background-size: 20px;
+    padding-left: 25px;
+    margin-left: 10px;
+}
+
+.menu {
+    align-self: flex-start;
+    margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.menu > i {
+    color: #E5E7EB;
+    font-size: 20px;
+}
+
+.menu > i > a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #D1D5DB;
+    margin-left: 10px;
+}
+
+.footer {
+    align-self: flex-start;
+    margin-left: 28px;
+    margin-top: auto;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer > i {
+    color: #E5E7EB;
+    font-size: 20px;
+}
+
+.footer > i > a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #D1D5DB;
+    margin-left: 10px;
+}
+
+.login-card {
+    background-color: #374151;
+    height: 58px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-img {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin-left: 12px;
+}
+
+.avatar-img > img {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+
+.login-form {
+    font-size: 14px;
+    color: #D1D5DB;
+}
+
+.footer .login-card > i {
+    color: #E5E7EB;
+    font-size: 20px;
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.burguer-menu {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 800px) {
+    aside {
+        visibility: hidden;
+    }
+
+    .burguer-menu{
+        font-size: 40px;
+        color: #FEF2F2;
+        visibility: visible;
+        background-color: #111827;
+        justify-self: left;
+        margin-right: auto;
+        border-radius: 0px 0px 20px 0px;
+        padding: 15px;
+    }
+}
+
